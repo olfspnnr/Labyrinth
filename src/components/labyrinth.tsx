@@ -36,6 +36,13 @@ export class Labyrinth extends React.Component<LabyrinthProps, LabyrinthState> {
 
   private keyArray = [
     {
+      char: "f5",
+      number: 116,
+      func: () => {
+        this.initalStart().then(() => {});
+      }
+    },
+    {
       char: "o",
       number: 79,
       func: () => {
