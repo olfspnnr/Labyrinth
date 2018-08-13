@@ -1,0 +1,30 @@
+
+- Menü erstellen
+	- zur Auswahl des Levels
+	- zur Auswahl der Spielfigur
+
+#########################
+
+- zusätzliches attribut an tile für ziel
+
+- erkennen ob ein teleportationsfeld über dem tile liegt
+	- levelstructure durchgehen, nach teleportationsfeldern suchen, darunter liegende levelFelder markieren
+
+- Richtigen Level einspeisen
+
+- teleportation bei bewegung auf walkthrough-feld
+	- funktion zur erkennung des ausgang punktes
+		- 1 level höher
+			- prüfung ob dort ein teleportationsfeld ist, wenn ja, teleportieren, sonst nichts
+	- funktion zur teleportationsanfrage ans feld
+		- bist du ein teleportationsfeld?
+
+- bewegung der "figur"
+	- funktion zur erkennung ob eine bewegung möglich ist (mauer/teleportationsfeld)
+	- funktion zur erkennung des passenden feldes
+		- hoch == versuchen 1 row niedriger
+		- runter == versuchen 1 row höher
+		- links == versuchen 1 tile niedriger
+		- rechts == versuchen 1 tile höher
+			- space == versuchen 1 level höher
+			- shift == versuchen 1 level niedriger
